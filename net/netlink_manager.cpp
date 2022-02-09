@@ -349,7 +349,6 @@ bool NetlinkManager::SendMessageAndGetSingleResponseOrError(
     return false;
   }
   if (response_vec.size() != 1) {
-    LOG(ERROR) << "Unexpected response size: " << response_vec.size();
     return false;
   }
 
